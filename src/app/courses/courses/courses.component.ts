@@ -42,4 +42,10 @@ export class CoursesComponent implements OnInit {
   onAdd() {
     this.router.navigate(['new'], { relativeTo: this.route });
   }
+
+  onEdit(pCourse: Course) {
+    this.router.navigate(['new', { course: JSON.stringify(pCourse) }], {
+      relativeTo: this.route,
+    });
+  }
 }
