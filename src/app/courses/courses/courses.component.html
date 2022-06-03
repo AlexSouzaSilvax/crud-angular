@@ -24,10 +24,12 @@
           Categoria
         </th>
         <td class="categoryColumn" mat-cell *matCellDef="let course">
-          {{ course.category }}
-          <mat-icon aria-hidden="false" aria-label="Categoria do Curso">{{
-            course.category | category
-          }}</mat-icon>
+          <div class="iconCategory">
+            {{ course.category }}
+            <mat-icon aria-hidden="false" aria-label="Categoria do Curso" style="padding-inline-start: 5px;">{{
+              course.category | category
+            }}</mat-icon>
+          </div>
         </td>
       </ng-container>
 
