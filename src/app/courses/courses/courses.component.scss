@@ -1,3 +1,7 @@
+.divTable {
+
+}
+
 table {
   width: 100%;
 }
@@ -10,6 +14,27 @@ table {
   justify-content: center;
 }
 
-th.mat-sort-header-sorted {
-  color: black;
+.idColumn {
+  width: 10% !important;
+}
+
+.nameColumn {
+  padding-left: 20px;
+  width: 70% !important;
+}
+
+.categoryColumn {
+  width: 20% !important;
+}
+
+.actionsColumn {
+  width: 40% !important;
+  padding: 5px;
+  margin-top: 8px;
+  margin-left: 35px;
+}
+
+.btnAdd {
+
+
 }
