@@ -14,7 +14,7 @@ export class CoursesService {
 
   list() {
     return this.httpClient.get<Course[]>(this.API).pipe(
-      first(),
+      first()
       //delay(1500),
       //tap((courses) => console.log(courses))
     );
@@ -30,5 +30,9 @@ export class CoursesService {
         .post<Course>(`${this.API}/create`, record)
         .pipe(first());
     }
+  }
+
+  delete(id: string) {
+    return this.httpClient.post<Course>(`${this.API}/delete`, id).pipe(first());
   }
 }
